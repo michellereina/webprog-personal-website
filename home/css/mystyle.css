@@ -1,11 +1,21 @@
 body {
-  background-color: lightblue;
+  background-color: #DED7EC;
 }
 h1 {
-  color: white;
+  color: purple;
+  text-align: center;
+}
+h2 {
+  color: #4990B3;
   text-align: center;
 }
 p {
+  color: #545375;
+  font-family: verdana;
+  font-size: 20px;
+}
+ul {
+  color: #545375;
   font-family: verdana;
   font-size: 20px;
 }
