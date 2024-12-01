@@ -5,6 +5,18 @@ h1 {
   color: purple;
   text-align: center;
 }
+.container {
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color:#b3a3d3 ;
+  border-radius: 25px;
+}
+.container table {
+ width: 100%;
+}
+.container td{
+  text-align: center;
+}
 h2 {
   color: #4990B3;
   text-align: center;
@@ -19,3 +31,4 @@ ul {
   font-family: verdana;
   font-size: 17px;
 }
+
