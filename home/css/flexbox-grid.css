@@ -13,6 +13,7 @@ body{
   header, footer {
     background-color: purple;
     padding: 20px;
+    color: #DED7EC;
   }
   
   main {
@@ -29,7 +30,7 @@ body{
     justify-content: center;
   }
   
-  
+
   .main-content > .grid {
     background-color: rgba(194, 124, 238, 0.453);
     border-radius: 20px;
@@ -39,7 +40,7 @@ body{
     padding: 20px;
     text-align: center;
     line-height: 40px;
-    color: #f0f0f0;
+    color: #4990B3;
   }
   .images{
     width: 1650px;
@@ -48,7 +49,7 @@ body{
     justify-content: center;
     text-align: center;
     padding: 25px;
-    color: #f0f0f0;
+    color: #4990B3;
   }
   img{
     width: 25%;
