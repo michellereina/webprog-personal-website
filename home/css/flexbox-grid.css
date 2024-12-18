@@ -54,6 +54,10 @@ body{
   img{
     width: 25%;
   }
+  div img {
+    display: inline-block;
+    margin-right: 10px;
+  }
   table {
     border-collapse: collapse;
     width: 100%;
