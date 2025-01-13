@@ -101,18 +101,18 @@ body{
     text-decoration: none;
     font-size: 16px;
     padding: 10px 20px;
-    background-color: #007bff; /* Button Background Color */
-    color: white; /* Button Text Color */
+    background-color: #ede4ff; /* Button Background Color */
+    color: #4990B3; /* Button Text Color */
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
   }
   
   .nav-link:hover {
-    background-color: #0056b3; /* Hover Effect */
+    background-color: purple; /* Hover Effect */
     transform: scale(1.05);
   }
   
   .nav-link:active {
-    background-color: #004085; /* Active State Color */
+    background-color: rgb(99, 1, 99); /* Active State Color */
   }
