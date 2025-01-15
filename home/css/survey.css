@@ -135,3 +135,32 @@ body{
   .nav-link:active {
     background-color: rgb(99, 1, 99); 
   }
+
+  /* Base styles for the body */
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+
+  /* Container for the heart */
+  .heart-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* The heart itself */
+  .heart {
+    font-size: 50px;
+    color: #ccc; /* Default color for unliked state */
+    transition: color 0.3s ease;
+  }
+
+  /* Change the color of the heart when liked */
+  .heart.liked {
+    color: #e74c3c; /* Red for liked state */
+  }

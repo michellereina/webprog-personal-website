@@ -27,6 +27,19 @@
 <br>
 <div class="grid"><h2>Did you like my website?</h2>
 <div class="image-container"> 
+    </head>
+    <body>
+      <div class="heart-container">
+        <i class="heart">❤</i>
+      </div>
+    
+      <script>
+        // JavaScript to toggle the "liked" state
+        document.querySelector(".heart-container").addEventListener("click", function () {
+          const heart = document.querySelector(".heart");
+          heart.classList.toggle("liked"); // Toggle the "liked" class
+        });
+      </script>
 </div>
 </div>
 </section>
