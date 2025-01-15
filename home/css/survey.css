@@ -136,26 +136,17 @@ body{
     background-color: rgb(99, 1, 99); 
   }
 
-  /* Base styles for the body */
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f9f9f9;
-    margin: 0;
-  }
-
   /* Container for the heart */
   .heart-container {
     display: inline-block;
+    align-items: center;
     cursor: pointer;
   }
 
   /* The heart itself */
   .heart {
-    font-size: 50px;
+    font-size: 150px;
+    align-items: center;
     color: #ccc; /* Default color for unliked state */
     transition: color 0.3s ease;
   }
