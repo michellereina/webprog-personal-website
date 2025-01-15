@@ -154,4 +154,17 @@ body{
   /* Change the color of the heart when liked */
   .heart.liked {
     color: #e74c3c; /* Red for liked state */
+    animation: pop 0.3s ease;
+  }
+  
+  @keyframes pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
