@@ -132,3 +132,18 @@ body{
   .nav-link:active {
     background-color: rgb(99, 1, 99);
   }
+  
+  .image-container {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Space between images */
+    align-items: center; /* Vertically align images */
+    padding: 10px;
+  }
+
+  /* Image styles */
+  .image-container img {
+    width: 200px; /* Set a specific width for the images */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Optional border */
+    border-radius: 10px; /* Optional rounded corners */
+  }
