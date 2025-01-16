@@ -27,6 +27,13 @@
   </div>
 
 <div class="grid"><h2>Through photography, we can see the world through another’s eyes.</h2>
+  <div id="app">
+    <div class="gallery-container">
+      <figure v-for="photo in photos" :key="photo.name">
+        <img :src="photo.url" :alt="photo.name">
+        <figcaption>{{ photo.name }}</figcaption>
+      </figure>
+    </div>
 
 </div>
 </section>
