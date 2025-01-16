@@ -120,7 +120,7 @@ body{
       margin-bottom: 20px;
       display: flex;
       background-color: #ede4ff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 10px 20px;
       border-radius: 8px;
       justify-content: center;
