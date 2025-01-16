@@ -168,3 +168,51 @@ body{
       transform: scale(1);
     }
   }
+
+  .flex-item-survey input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: #DBD8D1;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Poppins", serif;
+  }
+  
+  .flex-item-survey button {
+    padding: 10px 20px;
+    background-color:  rgba(194, 124, 238, 0.453); 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; 
+    font-family: "Poppins", serif;
+    float: left;
+  }
+  
+  
+  .flex-item-survey button:hover {
+    background-color:  purple; 
+  }
+  
+  .flex-item-survey ul {
+    list-style: none;
+    padding: 20px; 
+    padding-left: 30px; 
+    margin-top: 70px; 
+    border: 1px solid rgba(194, 124, 238, 0.453);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .flex-item-survey .suggestion-list {
+    width: 100%; 
+  }
+  
+  .flex-item-survey ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    text-align: left;
+    font-family: "Poppins", serif;
+  }
