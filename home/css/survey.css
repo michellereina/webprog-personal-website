@@ -136,39 +136,6 @@ body{
     background-color: rgb(99, 1, 99); 
   }
 
-  /* Container for the heart */
-  .heart-container {
-    display: inline-block;
-    align-items: center;
-    cursor: pointer;
-  }
-
-  /* The heart itself */
-  .heart {
-    font-size: 150px;
-    align-items: center;
-    color: #ccc; /* Default color for unliked state */
-    transition: color 0.3s ease;
-  }
-
-  /* Change the color of the heart when liked */
-  .heart.liked {
-    color: #e74c3c; /* Red for liked state */
-    animation: pop 0.3s ease;
-  }
-  
-  @keyframes pop {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-
   .flex-item-survey input[type="text"] {
     width: 100%;
     padding: 10px;
