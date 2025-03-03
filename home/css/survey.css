@@ -92,7 +92,7 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", serif;
   }
   
   
@@ -174,7 +174,7 @@ body{
   }
   
   .flex-item-survey .suggestion-list {
-    width: 90%; 
+    width: 100%; 
   }
   
   .flex-item-survey ul li {
