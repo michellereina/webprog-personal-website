@@ -3,7 +3,7 @@ import index from '@/views/index.vue';
 import education from '@/views/education.vue';
 import interest from '@/views/interest.vue';
 import goals from '@/views/goals.vue';
-import gallery from '@/views/gallery.vue';
+
 
 
 const routes = [
@@ -11,7 +11,6 @@ const routes = [
     { path: '/education', component: education },
     { path: '/interest', component: interest },
     { path: '/goals', component: goals },
-    { path: '/gallery', component: gallery},
 ];
 
 const router = createRouter({
