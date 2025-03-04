@@ -39,32 +39,41 @@
   </div>
 </template>
 
-<script>document.addEventListener('mousemove', (e) => {
-    const sparkle = document.createElement('div');
-    sparkle.classList.add('cursor-sparkle');
-    sparkle.style.top = `${e.clientY}px`;
-    sparkle.style.left = `${e.clientX}px`;
-    document.body.appendChild(sparkle);
-  
-    setTimeout(() => {
-      sparkle.remove();
-    }, 500);
-  });
-
-  const app = Vue.createApp({
-    data() {
-      return {
-        photos: [
-          { name: '🐇Buying Figurines', url: 'Me buying figurines.jpg' },
-          { name: '📍Kawaguchi', url: "Me in Fuji.jpg" },
-          { name: '📍Tokyo', url: "Me in Tokyo.jpg" },
-         
-        ]
-      };
+<script>export default {
+  name: 'SparkleGalleryApp',
+  data() {
+    return {
+      photos: [
+        { name: '🐇 Buying Figurines', url: 'Me-buying-figurines.jpg' },
+        { name: '📍 Kawaguchi', url: "Me-in-Fuji.jpg" },
+        { name: '📍 Tokyo', url: "Me-in-Tokyo.jpg" }
+      ]
     }
-  });
-  
-  app.mount('#app');
+  },
+  methods: {
+    createSparkle(e) {
+      // Create sparkle element
+      const sparkle = document.createElement('div');
+      sparkle.classList.add('cursor-sparkle');
+      sparkle.style.top = `${e.clientY}px`;
+      sparkle.style.left = `${e.clientX}px`;
+      document.body.appendChild(sparkle);
+
+      // Remove sparkle after animation
+      setTimeout(() => {
+        sparkle.remove();
+      }, 500);
+    }
+  },
+  mounted() {
+    // Add event listener when component is mounted
+    window.addEventListener('mousemove', this.createSparkle);
+  },
+  beforeUnmount() {
+    // Remove event listener when component is destroyed
+    window.removeEventListener('mousemove', this.createSparkle);
+  }
+}
 </script>
 <style>
 body{
