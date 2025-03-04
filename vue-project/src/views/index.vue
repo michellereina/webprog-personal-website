@@ -4,7 +4,6 @@
       <h1>Know Me Better!</h1>
     </header>
     <main>
-    <section class="main-content">
       <nav class="navbar">
         <ul class="nav-list">
           <li><RouterLink to="/" class="nav-link" aria-current="page">Home</RouterLink></li>
@@ -16,10 +15,10 @@
           <li><RouterLink to="/survey" class="nav-link">Survey</RouterLink></li>
         </ul>
       </nav>
-    </div>
 
-    <div class="grid">    
-      <h2>💜About Me💜</h2>
+      <section class="main-content">
+        <article class="about-me">
+          <h2>💜About Me💜</h2>
           <img 
             src="https://i.pinimg.com/originals/d2/24/eb/d224eba9a97d27fb5f4702b06c8a3872.jpg" 
             alt="Profile of Michelle Reina B. Pineda" 
