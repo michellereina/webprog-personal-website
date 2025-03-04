@@ -1,36 +1,71 @@
-<template><div class="container">
-<header>
-<h1>References</h1></header><main>
-<section class="main-content">
-  <div>
-    <nav class="navbar">
+<template>
+  <div class="container">
+    <header>
+      <h1>References</h1>
+    </header>
+
+    <main>
+      <nav class="navbar">
         <ul class="nav-list">
-        <li><RouterLink to="/" class="nav-link">Home</RouterLink></li>
-        <li><RouterLink to="/education" class="nav-link">Education</RouterLink></li>
-        <li><RouterLink to="/interest" class="nav-link">Interests</RouterLink></li>
-        <li><RouterLink to="/goals" class="nav-link">Goals</RouterLink></li>
-        <li><RouterLink to="/gallery" class="nav-link">Gallery</RouterLink></li>
-        <li><RouterLink to="/reference" class="nav-link">Reference</RouterLink></li>
-        <li><RouterLink to="/survey" class="nav-link">Survey</RouterLink></li>
-      </ul>
-    </nav>
+          <li><RouterLink to="/" class="nav-link">Home</RouterLink></li>
+          <li><RouterLink to="/education" class="nav-link">Education</RouterLink></li>
+          <li><RouterLink to="/interest" class="nav-link">Interests</RouterLink></li>
+          <li><RouterLink to="/goals" class="nav-link">Goals</RouterLink></li>
+          <li><RouterLink to="/gallery" class="nav-link">Gallery</RouterLink></li>
+          <li><RouterLink to="/reference" class="nav-link">Reference</RouterLink></li>
+          <li><RouterLink to="/survey" class="nav-link">Survey</RouterLink></li>
+        </ul>
+      </nav>
+
+      <section class="main-content">
+        <h2>References and Sources</h2>
+        
+        <div class="references-container">
+          <div class="reference-category">
+            <h3>AI and Learning Platforms</h3>
+            <ul class="reference-list">
+              <li v-for="ref in aiReferences" :key="ref.name">
+                <a :href="ref.url" target="_blank" rel="noopener noreferrer">
+                  {{ ref.name }}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reference-category">
+            <h3>Web Development Resources</h3>
+            <ul class="reference-list">
+              <li v-for="ref in webDevReferences" :key="ref.name">
+                <a :href="ref.url" target="_blank" rel="noopener noreferrer">
+                  {{ ref.name }}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reference-category">
+            <h3>Design and Inspiration</h3>
+            <ul class="reference-list">
+              <li v-for="ref in designReferences" :key="ref.name">
+                <a :href="ref.url" target="_blank" rel="noopener noreferrer">
+                  {{ ref.name }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <!-- Sidebar content can be added here if needed -->
+      </aside>
+    </main>
+
+    <footer>
+      <p>Asia Pacific College</p>
+    </footer>
   </div>
-<br>
-<div class="grid"><h2>References and Sources</h2>
-  <p><a href="https://chatgpt.com">ChatGPT</a>
-    <a href="https://gemini.google.com">Gemini</a> 
-    <a href="https://www.w3schools.com/css/default.asp">CSS</a>
-    <a href="https://www.w3schools.com/html/default.asp">HTML</a>
-    <a href="https://www.w3schools.com/js/default.asp">JavaScript</a>
-    <a href="https://i.pinimg.com/originals/d2/24/eb/d224eba9a97d27fb5f4702b06c8a3872.jpg">Kuromi icon</a>
-  </p> 
-</div>
-</div>
-</section>
-<aside class="sidebar"></aside>
-</main>
-<footer>Asia Pacific College</footer>
-</div></template>
+</template>
 
 <script>document.addEventListener('mousemove', (e) => {
     const sparkle = document.createElement('div');
