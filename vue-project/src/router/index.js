@@ -5,7 +5,7 @@ import interest from '@/views/interest.vue';
 import goals from '@/views/goals.vue';
 import gallery from '@/views/gallery.vue';
 import reference from '@/views/reference.vue';
-import survey from '@/views/survey.vue';
+import survey from '@/views/survey.vue'
 
 const routes = [
     { path: '/', component: index }, // Default route is Login
@@ -14,7 +14,7 @@ const routes = [
     { path: '/goals', component: goals },
     { path: '/gallery', component: gallery},
     { path:  '/reference', component: reference},
-    { path:  '/survey', component: survey},
+    { path:  '/survey', component: survey}
 ];
 
 const router = createRouter({
