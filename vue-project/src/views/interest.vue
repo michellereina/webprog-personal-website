@@ -1,4 +1,5 @@
-<template><div class="container">
+<template>
+<div class="container">
 <header>
 <h1>Hobbies and Interests</h1></header><main>
 <section class="main-content">
@@ -15,6 +16,7 @@
       </ul>
     </nav>
   </div>
+  
   <div class="grid"><h2>A list of what I enjoy.</h2>
     <ul>
       <li>Watch movies and series📽️</li>
