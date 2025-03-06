@@ -5,6 +5,7 @@
     </header>
 
     <main>
+    <br>
       <nav class="navbar">
         <ul class="nav-list">
           <li><RouterLink to="/" class="nav-link">Home</RouterLink></li>
@@ -19,7 +20,6 @@
 
       <section class="main-content">
         <h2>Through photography, we can see the world through another's eyes.</h2>
-        
         <div class="gallery-container">
           <figure v-for="photo in photos" :key="photo.id" class="gallery-item">
             <img :src="photo.url" :alt="photo.name" class="gallery-image">
@@ -27,14 +27,10 @@
           </figure>
         </div>
       </section>
-
-      <aside class="sidebar">
-        <!-- Sidebar content can be added here if needed -->
-      </aside>
     </main>
 
     <footer>
-      <p>Asia Pacific College</p>
+      Asia Pacific College
     </footer>
   </div>
 </template>
@@ -106,16 +102,12 @@ body{
   
   
   .main-content > .grid {
-    
     background-color: rgba(194, 124, 238, 0.453);
     border-radius: 20px;
     width: 800px;
     height: auto;
     margin: auto;
     padding: 20px;
-    text-align: center;
-    line-height: 50px;
-    color: #3d728d;
   }
   .images{
     width: 1650px;
@@ -196,9 +188,17 @@ body{
   .gallery-container {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
     gap: 20px;
 }
+.gallery-item{
+  width:200px;
+}
+
+  .gallery-image {
+    width:200px;
+  }
 
   figure {
     width: 120px;

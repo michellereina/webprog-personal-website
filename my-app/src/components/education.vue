@@ -5,6 +5,7 @@
     </header>
     
     <main>
+    <br>
       <nav class="navbar">
         <ul class="nav-list">
           <li><RouterLink to="/" class="nav-link">Home</RouterLink></li>
@@ -17,41 +18,48 @@
         </ul>
       </nav>
 
-      <section class="main-content">
-        <div class="education-section">
-          <h2>Education and Achievements</h2>
-          <p>Studies at Asia Pacific College</p>
-          <p>Graduated Senior High School at University of Makati</p>
-          <p>Graduated Junior High School at Fort Bonifacio High School</p>
-          <p>Graduated Elementary and Pre-school at Pineslight School of Makati</p>
+      <div class="content-wrapper">
+        <section class="main-content">
+          <div class="grid">
+          <div class="education-section">
+            <h2>Education and Achievements</h2>
+            <p>Studies at Asia Pacific College</p>
+            <p>Graduated Senior High School at University of Makati</p>
+            <p>Graduated Junior High School at Fort Bonifacio High School</p>
+            <p>Graduated Elementary and Pre-school at Pineslight School of Makati</p>
+          </div>
+          </div>
+
+        <br>
+
+        <div class="grid">
+            <h2>Course</h2>
+            <p>
+              Studying Bachelor of Science in Information Technology 
+              with specialization in Mobile and Internet Technology
+            </p>
         </div>
 
-        <div class="course-section">
-          <h2>Course</h2>
-          <p>
-            Studying Bachelor of Science in Information Technology 
-            with specialization in Mobile and Internet Technology
-          </p>
-        </div>
+        <br>
 
-        <div class="experience-section">
-          <h2>IT Experience</h2>
-          <ul>
-            <li>Creating an app using Android Studio</li>
-          </ul>
+        <div class="grid">
+            <h2>IT Experience</h2>
+            <ul>
+              <li>
+              <p>Creating an app using Android Studio</p>
+              </li>
+            </ul>
         </div>
-      </section>
-
-      <aside class="sidebar">
-        <!-- Sidebar content can be added here if needed -->
-      </aside>
+        </section>
+      </div>
     </main>
 
     <footer>
-      <p>Asia Pacific College</p>
+      Asia Pacific College
     </footer>
   </div>
 </template>
+
 
 <script>document.addEventListener('mousemove', (e) => {
     const sparkle = document.createElement('div');
@@ -88,6 +96,9 @@ body{
     color: #DED7EC;
   
   }
+  h2{
+    color: purple;
+  }
   
   footer {
     background-color: purple;
@@ -114,16 +125,12 @@ body{
   
   
   .main-content > .grid {
-    
     background-color: rgba(194, 124, 238, 0.453);
     border-radius: 20px;
     width: 800px;
     height: auto;
     margin: auto;
     padding: 20px;
-    text-align: center;
-    line-height: 50px;
-    color: #3d728d;
   }
 
   .grid2 {

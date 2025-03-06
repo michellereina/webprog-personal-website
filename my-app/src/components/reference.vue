@@ -3,8 +3,8 @@
     <header>
       <h1>References</h1>
     </header>
-
     <main>
+    <br>
       <nav class="navbar">
         <ul class="nav-list">
           <li><RouterLink to="/" class="nav-link">Home</RouterLink></li>
@@ -18,52 +18,24 @@
       </nav>
 
       <section class="main-content">
-        <h2>References and Sources</h2>
-        
-        <div class="references-container">
-          <div class="reference-category">
-            <h3>AI and Learning Platforms</h3>
-            <ul class="reference-list">
-              <li v-for="ref in aiReferences" :key="ref.name">
-                <a :href="ref.url" target="_blank" rel="noopener noreferrer">
-                  {{ ref.name }}
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="reference-category">
-            <h3>Web Development Resources</h3>
-            <ul class="reference-list">
-              <li v-for="ref in webDevReferences" :key="ref.name">
-                <a :href="ref.url" target="_blank" rel="noopener noreferrer">
-                  {{ ref.name }}
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="reference-category">
-            <h3>Design and Inspiration</h3>
-            <ul class="reference-list">
-              <li v-for="ref in designReferences" :key="ref.name">
-                <a :href="ref.url" target="_blank" rel="noopener noreferrer">
-                  {{ ref.name }}
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="grid">
+          <h2>References and Sources</h2>
+          <ul>
+            <li>
+              <p>OpenAI. (2023). ChatGPT (GPT-4). <a class="src_link" href="https://openai.com/gpt-4" target="_blank">https://openai.com/gpt-4</a></p>
+              <p>Anthropic. (2024). Claude 3.7 Sonnet. <a class="src_link" href="https://www.anthropic.com/claude" target="_blank">https://www.anthropic.com/claude</a></p>
+              <p>Google. (2024). Gemini Advanced. <a class="src_link" href="https://gemini.google.com" target="_blank">https://gemini.google.com</a></p>
+              <p>Bootstrap. (n.d.). Introduction. <a class="src_link" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">https://getbootstrap.com/docs/5.0/getting-started/introduction/</a></p>
+              <p>W3Schools. (n.d.). Vue.js Tryit Editor <a class="src_link" href="https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-for_foodImgs2" target="_blank">https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-for_foodImgs2</a></p>
+              <p>W3Schools. (n.d.). Vue.js Two-Way Binding <a class="src_link" href="https://www.w3schools.com/vue/tryit.php?filename=tryvue_modifiers_twoWay" target="_blank">https://www.w3schools.com/vue/tryit.php?filename=tryvue_modifiers_twoWay</a></p>
+            </li>
+          </ul>
         </div>
       </section>
-
-      <aside class="sidebar">
-        <!-- Sidebar content can be added here if needed -->
-      </aside>
     </main>
-
-    <footer>
-      <p>Asia Pacific College</p>
-    </footer>
+      <footer>
+       Asia Pacific College
+      </footer>
   </div>
 </template>
 
@@ -127,18 +99,14 @@
   
   
   .main-content > .grid {
-    
     background-color: rgba(194, 124, 238, 0.453);
     border-radius: 20px;
     width: 800px;
     height: auto;
     margin: auto;
     padding: 20px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 50px;
-    color: #3d728d;
   }
+
   .images{
     width: 1650px;
     background-color: #2c2c2c;

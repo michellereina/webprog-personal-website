@@ -3,7 +3,6 @@
 <header>
 <h1>Hobbies and Interests</h1></header><main>
 <section class="main-content">
-  <div>
     <nav class="navbar">
         <ul class="nav-list">
         <li><RouterLink to="/" class="nav-link">Home</RouterLink></li>
@@ -15,7 +14,7 @@
         <li><RouterLink to="/survey" class="nav-link">Survey</RouterLink></li>
       </ul>
     </nav>
-  </div>
+
   
   <div class="grid"><h2>A list of what I enjoy.</h2>
     <ul>
@@ -38,7 +37,6 @@
 </div>
 </div>
 </section>
-<aside class="sidebar"></aside>
 </main>
 <footer>Asia Pacific College</footer>
 </div></template>
@@ -101,8 +99,6 @@ body{
     padding: 20px;
     justify-content: center;
   }
-  
-  
   .main-content > .grid {
     background-color: rgba(194, 124, 238, 0.453);
     border-radius: 20px;
@@ -110,11 +106,8 @@ body{
     height: auto;
     margin: auto;
     padding: 20px;
-
-    text-align: center;
-    line-height: 50px;
-    color: #3d728d;
   }
+
   .images{
     width: 1650px;
     background-color: #2c2c2c;
@@ -150,6 +143,7 @@ body{
     margin: 0;
     padding: 0;
     list-style: none;
+    color:rgb(76, 117, 137);
     font-family: "Poppins", serif;
   }
   

@@ -3,8 +3,8 @@
     <header>
       <h1>Survey</h1>
     </header>
-
     <main>
+    <br>
       <nav class="navbar">
         <ul class="nav-list">
           <li><RouterLink to="/" class="nav-link">Home</RouterLink></li>
@@ -33,7 +33,7 @@
     </main>
 
     <footer>
-      <p>Asia Pacific College</p>
+      Asia Pacific College
     </footer>
   </div>
 </template>
@@ -121,19 +121,29 @@ main {
   align-items: center;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .survey-container {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 50%;
+  width: 90%;
 }
 
 input[type='text'] {
-  width: 80%;
+  width: 100%;
   padding: 10px;
+  border: #DBD8D1;
+  border-radius: 3px;
   margin-bottom: 10px;
+  font-size: 16px;
+  font-family: "Poppins", serif;
 }
 
 button {
@@ -157,4 +167,6 @@ button {
   margin: 5px 0;
   border-radius: 5px;
 }
+
+
 </style>
